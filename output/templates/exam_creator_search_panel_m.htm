@@ -1,0 +1,68 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_date_memo}
+			<a href="#" id="addSearchControl_date_memo" class="addSearchControl" {$addSearchControl_date_memo_attrs}>Date Memo</a><br>
+		{END addSearch_date_memo}
+		{BEGIN addSearch_ref}
+			<a href="#" id="addSearchControl_ref" class="addSearchControl" {$addSearchControl_ref_attrs}>Ref No</a><br>
+		{END addSearch_ref}
+		{BEGIN addSearch_exam_date}
+			<a href="#" id="addSearchControl_exam_date" class="addSearchControl" {$addSearchControl_exam_date_attrs}>Exam Date</a><br>
+		{END addSearch_exam_date}
+		{BEGIN addSearch_program}
+			<a href="#" id="addSearchControl_program" class="addSearchControl" {$addSearchControl_program_attrs}>Course</a><br>
+		{END addSearch_program}
+		{BEGIN addSearch_batch}
+			<a href="#" id="addSearchControl_batch" class="addSearchControl" {$addSearchControl_batch_attrs}>Batch</a><br>
+		{END addSearch_batch}
+		{BEGIN addSearch_class}
+			<a href="#" id="addSearchControl_class" class="addSearchControl" {$addSearchControl_class_attrs}>Class</a><br>
+		{END addSearch_class}
+		{BEGIN addSearch_course}
+			<a href="#" id="addSearchControl_course" class="addSearchControl" {$addSearchControl_course_attrs}>Module</a><br>
+		{END addSearch_course}
+		{BEGIN addSearch_exam_remark}
+			<a href="#" id="addSearchControl_exam_remark" class="addSearchControl" {$addSearchControl_exam_remark_attrs}>Exam Remark</a><br>
+		{END addSearch_exam_remark}
+	</div>
+	
+	<div class="controlsBlock">
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow" {$filterRow_attrs}>
+			<div class="srchPanelCell">{$delCtrlButt}&nbsp;{$fLabel}:&nbsp;</div>
+			<div class="srchPanelCell srchPanelCell2">{$searchtype} {$searchcontrol} {$searchcontrol1}</div>
+		</div>
+		{END searchCtrlBlock}
+	</div>
+		
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META name=viewport 
+content="width=device-width, initial-scale=1, maximum-scale=1">
+<META http-equiv=X-UA-Compatible content=IE=8>
+<META http-equiv=Content-Type content="text/html; charset=Windows-1252"><LINK href="styles/default.css" rel=stylesheet type=text/css><LINK 
+href="styles/default_mobile.css" rel=stylesheet type=text/css>{BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel=stylesheet type=text/css>{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel=stylesheet type=text/css>{END pageCSSFiles}<!--[if IE]><LINK href="styles/defaultIE.css" rel=stylesheet type=text/css>{BEGIN IEcssFiles}<LINK href="{$stylepathIE}" rel=stylesheet type=text/css>{END IEcssFiles}<![endif]-->
+<META name=GENERATOR content="MSHTML 10.00.9200.16525"></HEAD>
+<BODY class="{$stylename}" {$bodyattrs}>{BEGIN body}{$header} 
+<DIV>
+{BEGIN container_fields}
+<DIV class="runner-c runner-c-fields" style="HEIGHT: 190px; WIDTH: 68.84%">
+<DIV class=runner-tbody>
+<DIV 
+class="runner-b-editheader_mobile runner-row style2 {$brickclass_editheader_mobile}">
+<DIV class=runner-cc>{BEGIN back_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button onclick="window.location.href='student_info_list.php?a=return'" href="#">Back to 
+list</A> </SPAN>{END back_button}Student Info, Edit record [ Student: {$show_key1} ]</DIV></DIV>
+{BEGIN message_block}<DIV class="runner-b-message runner-row style1 {$brickclass_message}">
+<DIV class=runner-cc>
+<DIV class=runner-message>{$message}</DIV></DIV></DIV>
+{END message_block}<DIV 
+class="runner-b-editfields_mobile1 runner-row style1 {$brickclass_editfields_mobile1}">
+<DIV class=runner-cc>
+<DIV class=runner-cc>{$TabGroup Personal1}&nbsp; 
+</DIV></DIV></DIV>
+{BEGIN legend}<DIV class="runner-b-legend runner-row style1 {$brickclass_legend}">
+<DIV class=runner-cc><SPAN id=required_block{$id}><IMG alt=bullet src="images/icon_required.gif"> - Required field </SPAN></DIV></DIV>
+{END legend}<DIV class="runner-b-editbuttons runner-row style2 {$brickclass_editbuttons}">
+<DIV class=runner-cc>{BEGIN save_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$savebutton_attrs}>Save</A> </SPAN>{END save_button}{BEGIN reset_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$resetbutton_attrs}>Reset</A> </SPAN>{END reset_button}{BEGIN prev_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$prevbutton_attrs}>&nbsp;&lt;&lt;&lt;&nbsp;</A> </SPAN>{END prev_button}{BEGIN back_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$backbutton_attrs}>Back to list</A> </SPAN>{END back_button}{BEGIN next_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$nextbutton_attrs}>&nbsp;&gt;&gt;&gt;&nbsp;</A> 
+</SPAN>{END next_button}</DIV></DIV></DIV></DIV>{END container_fields}
+{BEGIN container_flylist}
+<DIV class="runner-c runner-c-flylist">
+<DIV class=runner-tbody>
+<DIV 
+class="runner-b-flypanel_mobile runner-row style2 {$brickclass_flypanel_mobile}">
+<DIV class=runner-cc></DIV></DIV></DIV></DIV>{END container_flylist}
+{BEGIN container_details}
+<DIV class="runner-c runner-c-details">
+<DIV class=runner-tbody>
+{BEGIN detail_tables}<DIV class="runner-b-editdetails runner-row style1 {$brickclass_editdetails}">
+<DIV class=runner-cc>{$displayDetailTable_student_qualification} {$displayDetailTable_student_school} 
+{$displayDetailTable_student_extracurricular} {$displayDetailTable_student_discipline} {$displayDetailTable_student_hostel} 
+</DIV></DIV>{END detail_tables}</DIV></DIV>{END container_details}</DIV>
+<DIV></DIV>{$footer}{END body} </BODY></HTML>

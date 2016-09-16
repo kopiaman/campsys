@@ -1,0 +1,732 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<title>{$pagetitle}</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+		<!--[if IE]>
+			<link REL="stylesheet" href="styles/defaultIE.css" type="text/css">
+			{BEGIN IEcssFiles}
+			<link REL="stylesheet" href="{$stylepathIE}" type="text/css">
+			{END IEcssFiles}
+		<![endif]-->
+	</head>
+	
+	<body class="{$stylename}" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<table   cellpadding="0" class="runner-toptable">
+			<tr class="runner-header">
+				<td class="runner-top" colspan=3>
+					
+
+{BEGIN container_search}
+<table class="runner-c runner-c-search" cellpadding="0" align=center>
+
+
+<tr class="runner-toprow style2 header"><td class="runner-cl"><img src="images/spacer.gif"></td><td class="runner-cc" ><div  class="runner-b-srchheader {$brickclass_srchheader}">Student Assesment - Advanced search
+{$CrossElem}</div></td><td class="runner-cr"><img src="images/spacer.gif"></td></tr>
+
+
+{BEGIN conditions_block}
+<tr  class="runner-row style1 runner-b-srchconditions {$brickclass_srchconditions}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents" >	<center>
+	<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" class="runner-radio-button" name="srchType" {$all_checkbox}><label for="all_checkbox"> All conditions</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="runner-radio-button" name="srchType" {$any_checkbox}><label for="any_checkbox"> Any condition</label>
+	</center></td><td class="runner-cr"></td></tr>{END conditions_block}
+
+
+
+<tr  class="runner-row style1 runner-b-wrapper {$wrapperclass_fields}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents runner-wrapper" >
+
+{BEGIN container_fields}
+<table class="runner-c runner-c-fields" cellpadding="0" >
+
+
+<tr class="runner-toprow header style2 runner-b-srchfields"><td class="runner-cl"><img src="images/spacer.gif"></td>
+	<td class="runner-cc">&nbsp;</td>
+	<td class="runner-cc">NOT</td>
+	<td class="runner-cc" colspan=3>&nbsp; </td>
+<td class="runner-cr"></td></tr>
+	{BEGIN StudentID_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_StudentID {$fielddispclass_StudentID}">
+				Student
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_StudentID {$fielddispclass_StudentID}">
+			<input type="checkbox" {$StudentID_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_StudentID {$fielddispclass_StudentID}">
+			{$searchtype_StudentID}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_StudentID {$fielddispclass_StudentID}">
+			{$StudentID_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_StudentID {$fielddispclass_StudentID}">
+			{$StudentID_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END StudentID_fieldblock}
+	{BEGIN MatricNo_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_MatricNo {$fielddispclass_MatricNo}">
+				Matric No
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_MatricNo {$fielddispclass_MatricNo}">
+			<input type="checkbox" {$MatricNo_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_MatricNo {$fielddispclass_MatricNo}">
+			{$searchtype_MatricNo}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_MatricNo {$fielddispclass_MatricNo}">
+			{$MatricNo_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_MatricNo {$fielddispclass_MatricNo}">
+			{$MatricNo_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END MatricNo_fieldblock}
+	{BEGIN DipID_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_DipID {$fielddispclass_DipID}">
+				Program
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_DipID {$fielddispclass_DipID}">
+			<input type="checkbox" {$DipID_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_DipID {$fielddispclass_DipID}">
+			{$searchtype_DipID}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_DipID {$fielddispclass_DipID}">
+			{$DipID_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_DipID {$fielddispclass_DipID}">
+			{$DipID_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END DipID_fieldblock}
+	{BEGIN BatchID_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_BatchID {$fielddispclass_BatchID}">
+				Batch
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_BatchID {$fielddispclass_BatchID}">
+			<input type="checkbox" {$BatchID_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_BatchID {$fielddispclass_BatchID}">
+			{$searchtype_BatchID}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_BatchID {$fielddispclass_BatchID}">
+			{$BatchID_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_BatchID {$fielddispclass_BatchID}">
+			{$BatchID_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END BatchID_fieldblock}
+	{BEGIN Class_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_Class {$fielddispclass_Class}">
+				Class
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_Class {$fielddispclass_Class}">
+			<input type="checkbox" {$Class_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_Class {$fielddispclass_Class}">
+			{$searchtype_Class}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_Class {$fielddispclass_Class}">
+			{$Class_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_Class {$fielddispclass_Class}">
+			{$Class_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END Class_fieldblock}
+	{BEGIN Intake_Category_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_Intake_Category {$fielddispclass_Intake_Category}">
+				Course Program
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_Intake_Category {$fielddispclass_Intake_Category}">
+			<input type="checkbox" {$Intake_Category_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_Intake_Category {$fielddispclass_Intake_Category}">
+			{$searchtype_Intake_Category}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_Intake_Category {$fielddispclass_Intake_Category}">
+			{$Intake_Category_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_Intake_Category {$fielddispclass_Intake_Category}">
+			{$Intake_Category_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END Intake_Category_fieldblock}
+	{BEGIN topic_1_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_topic_1 {$fielddispclass_topic_1}">
+				GEN Subject
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_topic_1 {$fielddispclass_topic_1}">
+			<input type="checkbox" {$topic_1_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_topic_1 {$fielddispclass_topic_1}">
+			{$searchtype_topic_1}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_topic_1 {$fielddispclass_topic_1}">
+			{$topic_1_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_topic_1 {$fielddispclass_topic_1}">
+			{$topic_1_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END topic_1_fieldblock}
+	{BEGIN taskno1_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_taskno1 {$fielddispclass_taskno1}">
+				GEN Task No
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_taskno1 {$fielddispclass_taskno1}">
+			<input type="checkbox" {$taskno1_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_taskno1 {$fielddispclass_taskno1}">
+			{$searchtype_taskno1}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_taskno1 {$fielddispclass_taskno1}">
+			{$taskno1_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_taskno1 {$fielddispclass_taskno1}">
+			{$taskno1_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END taskno1_fieldblock}
+	{BEGIN topic_2_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_topic_2 {$fielddispclass_topic_2}">
+				MEC Subject
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_topic_2 {$fielddispclass_topic_2}">
+			<input type="checkbox" {$topic_2_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_topic_2 {$fielddispclass_topic_2}">
+			{$searchtype_topic_2}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_topic_2 {$fielddispclass_topic_2}">
+			{$topic_2_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_topic_2 {$fielddispclass_topic_2}">
+			{$topic_2_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END topic_2_fieldblock}
+	{BEGIN taskno2_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_taskno2 {$fielddispclass_taskno2}">
+				MEC Task No
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_taskno2 {$fielddispclass_taskno2}">
+			<input type="checkbox" {$taskno2_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_taskno2 {$fielddispclass_taskno2}">
+			{$searchtype_taskno2}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_taskno2 {$fielddispclass_taskno2}">
+			{$taskno2_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_taskno2 {$fielddispclass_taskno2}">
+			{$taskno2_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END taskno2_fieldblock}
+	{BEGIN topic_3_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_topic_3 {$fielddispclass_topic_3}">
+				ASD Subject
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_topic_3 {$fielddispclass_topic_3}">
+			<input type="checkbox" {$topic_3_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_topic_3 {$fielddispclass_topic_3}">
+			{$searchtype_topic_3}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_topic_3 {$fielddispclass_topic_3}">
+			{$topic_3_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_topic_3 {$fielddispclass_topic_3}">
+			{$topic_3_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END topic_3_fieldblock}
+	{BEGIN taskno3_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_taskno3 {$fielddispclass_taskno3}">
+				ASD Task No
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_taskno3 {$fielddispclass_taskno3}">
+			<input type="checkbox" {$taskno3_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_taskno3 {$fielddispclass_taskno3}">
+			{$searchtype_taskno3}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_taskno3 {$fielddispclass_taskno3}">
+			{$taskno3_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_taskno3 {$fielddispclass_taskno3}">
+			{$taskno3_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END taskno3_fieldblock}
+	{BEGIN topic_4_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_topic_4 {$fielddispclass_topic_4}">
+				WNL Subject
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_topic_4 {$fielddispclass_topic_4}">
+			<input type="checkbox" {$topic_4_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_topic_4 {$fielddispclass_topic_4}">
+			{$searchtype_topic_4}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_topic_4 {$fielddispclass_topic_4}">
+			{$topic_4_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_topic_4 {$fielddispclass_topic_4}">
+			{$topic_4_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END topic_4_fieldblock}
+	{BEGIN taskno4_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_taskno4 {$fielddispclass_taskno4}">
+				WNL Task No
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_taskno4 {$fielddispclass_taskno4}">
+			<input type="checkbox" {$taskno4_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_taskno4 {$fielddispclass_taskno4}">
+			{$searchtype_taskno4}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_taskno4 {$fielddispclass_taskno4}">
+			{$taskno4_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_taskno4 {$fielddispclass_taskno4}">
+			{$taskno4_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END taskno4_fieldblock}
+	{BEGIN topic_5_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_topic_5 {$fielddispclass_topic_5}">
+				ELEC Subject
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_topic_5 {$fielddispclass_topic_5}">
+			<input type="checkbox" {$topic_5_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_topic_5 {$fielddispclass_topic_5}">
+			{$searchtype_topic_5}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_topic_5 {$fielddispclass_topic_5}">
+			{$topic_5_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_topic_5 {$fielddispclass_topic_5}">
+			{$topic_5_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END topic_5_fieldblock}
+	{BEGIN taskno5_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_taskno5 {$fielddispclass_taskno5}">
+				ELEC Task No
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_taskno5 {$fielddispclass_taskno5}">
+			<input type="checkbox" {$taskno5_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_taskno5 {$fielddispclass_taskno5}">
+			{$searchtype_taskno5}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_taskno5 {$fielddispclass_taskno5}">
+			{$taskno5_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_taskno5 {$fielddispclass_taskno5}">
+			{$taskno5_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END taskno5_fieldblock}
+	{BEGIN topic_6_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_topic_6 {$fielddispclass_topic_6}">
+				SHM Subject
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_topic_6 {$fielddispclass_topic_6}">
+			<input type="checkbox" {$topic_6_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_topic_6 {$fielddispclass_topic_6}">
+			{$searchtype_topic_6}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_topic_6 {$fielddispclass_topic_6}">
+			{$topic_6_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_topic_6 {$fielddispclass_topic_6}">
+			{$topic_6_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END topic_6_fieldblock}
+	{BEGIN taskno6_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_taskno6 {$fielddispclass_taskno6}">
+				SHM Task No
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_taskno6 {$fielddispclass_taskno6}">
+			<input type="checkbox" {$taskno6_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_taskno6 {$fielddispclass_taskno6}">
+			{$searchtype_taskno6}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_taskno6 {$fielddispclass_taskno6}">
+			{$taskno6_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_taskno6 {$fielddispclass_taskno6}">
+			{$taskno6_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END taskno6_fieldblock}
+	{BEGIN topic_7_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_topic_7 {$fielddispclass_topic_7}">
+				MNP Subject
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_topic_7 {$fielddispclass_topic_7}">
+			<input type="checkbox" {$topic_7_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_topic_7 {$fielddispclass_topic_7}">
+			{$searchtype_topic_7}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_topic_7 {$fielddispclass_topic_7}">
+			{$topic_7_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_topic_7 {$fielddispclass_topic_7}">
+			{$topic_7_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END topic_7_fieldblock}
+	{BEGIN taskno7_fieldblock}		
+	<tr class="runner-row style1 runner-b-srchfields"><td class="runner-cl"></td>
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_taskno7 {$fielddispclass_taskno7}">
+				MNP Task No
+			</div>
+		</td>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_taskno7 {$fielddispclass_taskno7}">
+			<input type="checkbox" {$taskno7_notbox}>
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldoption_taskno7 {$fielddispclass_taskno7}">
+			{$searchtype_taskno7}
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_taskno7 {$fielddispclass_taskno7}">
+			{$taskno7_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cc alt">
+		<div class="fieldcontrol_taskno7 {$fielddispclass_taskno7}">
+			{$taskno7_editcontrol1}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END taskno7_fieldblock}
+
+
+
+<tr class="{$cfooterclass_fields}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cc alt"></td><td class="runner-cc alt"></td><td class="runner-cc alt"></td><td class="runner-cc alt"></td><td class="runner-cr alt"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_fields}
+
+</td><td class="runner-cr"></td></tr>
+
+
+
+<tr  class="runner-row style2 runner-b-srchbuttons {$brickclass_srchbuttons}"><td class="runner-cl"></td><td class="runner-cc runner-brickcontents" >{BEGIN search_button}
+<span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+</span>
+{END search_button} 
+{BEGIN reset_button}
+<span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" {$resetbutton_attrs}>Reset</a>
+</span>
+{END reset_button}
+{BEGIN back_button}
+<span class="runner-btnframe">
+<span class="runner-btnleft"></span>
+<span class="runner-btnright"></span>
+<a href="#" class="runner-button" {$backbutton_attrs}>Back to list</a>
+</span>
+{END back_button}</td><td class="runner-cr"></td></tr>
+
+
+<tr class="{$cfooterclass_search}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_search}
+
+
+				</td>
+			</tr>
+			<tr class="runner-body">
+				
+				<td class="runner-left {$blockclass_left}" >
+					
+				</td>	
+				
+				<td class="runner-center {$blockclass_center}">
+					
+				</td>	
+
+				<td class="runner-right {$blockclass_right}">
+					
+				</td>	
+			</tr>
+			<tr class="runner-footer">
+				<td class="runner-bottom" colspan=3>
+					<!--%%bottom%%-->
+				</td>
+			</tr>
+		</table>
+		{$footer}
+	{END body}
+	</body>
+</html>

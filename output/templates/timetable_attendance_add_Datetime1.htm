@@ -1,0 +1,58 @@
+<div {$pageattrs}>
+
+{BEGIN container_1}
+
+
+
+<table class="runner-c" cellpadding="0">
+{BEGIN date_tabfieldblock}
+	<tr class="runner-row style1">
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_date {$fielddispclass_date}">
+				{BEGIN date_label}Date{END date_label}
+			</div>
+		</td>
+		<td class="runner-cc alt">
+			<div class="fieldcontrol_date {$fielddispclass_date}">
+				{$date_editcontrol}
+			</div>
+		</td>
+	</tr>
+{END date_tabfieldblock}
+{BEGIN start_time_tabfieldblock}
+	<tr class="runner-row style1">
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_start_time {$fielddispclass_start_time}">
+				{BEGIN start_time_label}Start Time{END start_time_label}
+			</div>
+		</td>
+		<td class="runner-cc alt">
+			<div class="fieldcontrol_start_time {$fielddispclass_start_time}">
+				{$start_time_editcontrol}
+			</div>
+		</td>
+	</tr>
+{END start_time_tabfieldblock}
+{BEGIN end_time_tabfieldblock}
+	<tr class="runner-row style1">
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_end_time {$fielddispclass_end_time}">
+				{BEGIN end_time_label}End Time{END end_time_label}
+			</div>
+		</td>
+		<td class="runner-cc alt">
+			<div class="fieldcontrol_end_time {$fielddispclass_end_time}">
+				{$end_time_editcontrol}
+			</div>
+		</td>
+	</tr>
+{END end_time_tabfieldblock}
+</table>
+
+
+
+
+
+{END container_1}
+
+</div>

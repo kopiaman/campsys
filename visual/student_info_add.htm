@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META name=viewport 
+content="width=device-width, initial-scale=1, maximum-scale=1">
+<META http-equiv=X-UA-Compatible content=IE=8>
+<META http-equiv=Content-Type content="text/html; charset=Windows-1252"><LINK href="styles/default.css" rel=stylesheet type=text/css><LINK 
+href="styles/default_mobile.css" rel=stylesheet type=text/css>{BEGIN styleCSSFiles}<LINK href="{$stylepath}" rel=stylesheet type=text/css>{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK href="{$pagestylepath}" rel=stylesheet type=text/css>{END pageCSSFiles}<!--[if IE]><LINK href="styles/defaultIE.css" rel=stylesheet type=text/css>{BEGIN IEcssFiles}<LINK href="{$stylepathIE}" rel=stylesheet type=text/css>{END IEcssFiles}<![endif]-->
+<META name=GENERATOR content="MSHTML 10.00.9200.16525"></HEAD>
+<BODY class="{$stylename}" {$bodyattrs}>{BEGIN body}{$header} 
+<DIV>
+{BEGIN container_fields}
+<DIV class="runner-c runner-c-fields" style="HEIGHT: 190px; WIDTH: 58.04%">
+<DIV class=runner-tbody>
+<DIV 
+class="runner-b-addheader_mobile runner-row style2 {$brickclass_addheader_mobile}">
+<DIV class=runner-cc>{BEGIN back_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button onclick="window.location.href='student_info_list.php?a=return'" href="#">Back to 
+list</A> </SPAN>{END back_button}Student Info, Add new record</DIV></DIV>
+{BEGIN message_block}<DIV class="runner-b-message runner-row style1 {$brickclass_message}">
+<DIV class=runner-cc>
+<DIV class=runner-message>{$message}</DIV></DIV></DIV>
+{END message_block}<DIV 
+class="runner-b-addfields_mobile1 runner-row style1 {$brickclass_addfields_mobile1}">
+<DIV class=runner-cc>
+<DIV class=runner-cc>{$TabGroup Personal1}&nbsp; 
+</DIV></DIV></DIV>
+{BEGIN legend}<DIV class="runner-b-legend runner-row style1 {$brickclass_legend}">
+<DIV class=runner-cc><SPAN id=required_block{$id}><IMG alt=bullet src="images/icon_required.gif"> - Required field </SPAN></DIV></DIV>
+{END legend}<DIV class="runner-b-addbuttons runner-row style2 {$brickclass_addbuttons}">
+<DIV class=runner-cc>{BEGIN save_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$savebutton_attrs}>Save</A> </SPAN>{END save_button}{BEGIN cancel_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$cancelbutton_attrs}>Cancel</A> </SPAN>{END cancel_button}{BEGIN back_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$backbutton_attrs}>Back to list</A> </SPAN>{END back_button}{BEGIN backToMenu_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$backToMenubutton_attrs}>Back to menu</A> 
+</SPAN>{END backToMenu_button}</DIV></DIV></DIV></DIV>{END container_fields}
+{BEGIN container_flylist}
+<DIV class="runner-c runner-c-flylist">
+<DIV class=runner-tbody>
+<DIV 
+class="runner-b-flypanel_mobile runner-row style2 {$brickclass_flypanel_mobile}">
+<DIV class=runner-cc></DIV></DIV></DIV></DIV>{END container_flylist}</DIV>
+<DIV></DIV>{$footer}{END body} </BODY></HTML>

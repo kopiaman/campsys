@@ -1,0 +1,43 @@
+<?php
+$dalTableenroll2 = array();
+$dalTableenroll2["qua_level"] = array("type"=>200,"varname"=>"qua_level");
+$dalTableenroll2["qua_year"] = array("type"=>3,"varname"=>"qua_year");
+$dalTableenroll2["q1_s"] = array("type"=>200,"varname"=>"q1_s");
+$dalTableenroll2["q1_g"] = array("type"=>200,"varname"=>"q1_g");
+$dalTableenroll2["q2_s"] = array("type"=>200,"varname"=>"q2_s");
+$dalTableenroll2["q2_g"] = array("type"=>200,"varname"=>"q2_g");
+$dalTableenroll2["q3_s"] = array("type"=>200,"varname"=>"q3_s");
+$dalTableenroll2["q3_g"] = array("type"=>200,"varname"=>"q3_g");
+$dalTableenroll2["q4_s"] = array("type"=>200,"varname"=>"q4_s");
+$dalTableenroll2["q4_g"] = array("type"=>200,"varname"=>"q4_g");
+$dalTableenroll2["g5_s"] = array("type"=>200,"varname"=>"g5_s");
+$dalTableenroll2["g5_g"] = array("type"=>200,"varname"=>"g5_g");
+$dalTableenroll2["g6_s"] = array("type"=>200,"varname"=>"g6_s");
+$dalTableenroll2["g6_g"] = array("type"=>200,"varname"=>"g6_g");
+$dalTableenroll2["g7_s"] = array("type"=>200,"varname"=>"g7_s");
+$dalTableenroll2["g7_g"] = array("type"=>200,"varname"=>"g7_g");
+$dalTableenroll2["g8_s"] = array("type"=>200,"varname"=>"g8_s");
+$dalTableenroll2["g8_g"] = array("type"=>200,"varname"=>"g8_g");
+$dalTableenroll2["g9_s"] = array("type"=>200,"varname"=>"g9_s");
+$dalTableenroll2["g9_g"] = array("type"=>200,"varname"=>"g9_g");
+$dalTableenroll2["g10_s"] = array("type"=>200,"varname"=>"g10_s");
+$dalTableenroll2["g10_g"] = array("type"=>200,"varname"=>"g10_g");
+$dalTableenroll2["g11_s"] = array("type"=>200,"varname"=>"g11_s");
+$dalTableenroll2["g11_g"] = array("type"=>200,"varname"=>"g11_g");
+$dalTableenroll2["o_english"] = array("type"=>200,"varname"=>"o_english");
+$dalTableenroll2["oq_highest"] = array("type"=>200,"varname"=>"oq_highest");
+$dalTableenroll2["oq_major"] = array("type"=>200,"varname"=>"oq_major");
+$dalTableenroll2["oq_u"] = array("type"=>200,"varname"=>"oq_u");
+$dalTableenroll2["oq_cgpa"] = array("type"=>200,"varname"=>"oq_cgpa");
+$dalTableenroll2["at_ic"] = array("type"=>201,"varname"=>"at_ic");
+$dalTableenroll2["at_dob"] = array("type"=>201,"varname"=>"at_dob");
+$dalTableenroll2["at_spm"] = array("type"=>201,"varname"=>"at_spm");
+$dalTableenroll2["at_slc"] = array("type"=>201,"varname"=>"at_slc");
+$dalTableenroll2["at_coco"] = array("type"=>201,"varname"=>"at_coco");
+$dalTableenroll2["at_fama"] = array("type"=>201,"varname"=>"at_fama");
+$dalTableenroll2["at_famaic"] = array("type"=>201,"varname"=>"at_famaic");
+$dalTableenroll2["at_trans"] = array("type"=>201,"varname"=>"at_trans");
+$dalTableenroll2["at_photo"] = array("type"=>201,"varname"=>"at_photo");
+$dal_info["enroll2"]=&$dalTableenroll2;
+
+?>

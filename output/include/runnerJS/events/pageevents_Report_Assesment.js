@@ -1,0 +1,4 @@
+
+var pType=Runner.pages.constants.PAGE_LIST;Runner.pages.PageSettings.addPageEvent("Report_Assesment",pType,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Task_List1';if(!pageObj.buttonEventBefore['Task_List1']){pageObj.buttonEventBefore['Task_List1']=function(params,ctrl,pageObj,proxy,pageid,rowData){}}
+if(!pageObj.buttonEventAfter['Task_List1']){pageObj.buttonEventAfter['Task_List1']=function(result,ctrl,pageObj,proxy,pageid,rowData){window.open("t_eva_ass_task_list.php?q=%28types~equals~Assesment%29","_blank")}}
+$('a[id=Task_List1]').each(function(){if(!$(this).closest('tr.gridRowAdd').length){var newId="Task_List1"+"_"+Runner.genId();this.id=newId;var button_Task_List1=new Runner.form.Button({id:newId,btnName:"Task_List1"});button_Task_List1.init({args:[pageObj,proxy,pageid]});}});});

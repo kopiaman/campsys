@@ -1,0 +1,4 @@
+
+var pType=Runner.pages.constants.PAGE_LIST;Runner.pages.PageSettings.addPageEvent("student_info",pType,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='ASSIGN_AS_GRADUATE1';if(!pageObj.buttonEventBefore['ASSIGN_AS_GRADUATE1']){pageObj.buttonEventBefore['ASSIGN_AS_GRADUATE1']=function(params,ctrl,pageObj,proxy,pageid,rowData){params["txt"]="Hello";ctrl.setMessage("Sending request to server...");}}
+if(!pageObj.buttonEventAfter['ASSIGN_AS_GRADUATE1']){pageObj.buttonEventAfter['ASSIGN_AS_GRADUATE1']=function(result,ctrl,pageObj,proxy,pageid,rowData){var message="Success !!!";ctrl.setMessage(message);}}
+$('a[id=ASSIGN_AS_GRADUATE1]').each(function(){if(!$(this).closest('tr.gridRowAdd').length){var newId="ASSIGN_AS_GRADUATE1"+"_"+Runner.genId();this.id=newId;var button_ASSIGN_AS_GRADUATE1=new Runner.form.Button({id:newId,btnName:"ASSIGN_AS_GRADUATE1"});button_ASSIGN_AS_GRADUATE1.init({args:[pageObj,proxy,pageid]});}});});

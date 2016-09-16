@@ -1,0 +1,74 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_DipID}
+			<a href="#" id="addSearchControl_DipID" class="addSearchControl" {$addSearchControl_DipID_attrs}>Course</a><br>
+		{END addSearch_DipID}
+		{BEGIN addSearch_studentID}
+			<a href="#" id="addSearchControl_studentID" class="addSearchControl" {$addSearchControl_studentID_attrs}>Student</a><br>
+		{END addSearch_studentID}
+		{BEGIN addSearch_MatricNo}
+			<a href="#" id="addSearchControl_MatricNo" class="addSearchControl" {$addSearchControl_MatricNo_attrs}>Matric No</a><br>
+		{END addSearch_MatricNo}
+		{BEGIN addSearch_BatchID}
+			<a href="#" id="addSearchControl_BatchID" class="addSearchControl" {$addSearchControl_BatchID_attrs}>Batch</a><br>
+		{END addSearch_BatchID}
+		{BEGIN addSearch_item}
+			<a href="#" id="addSearchControl_item" class="addSearchControl" {$addSearchControl_item_attrs}>Item</a><br>
+		{END addSearch_item}
+		{BEGIN addSearch_bill_no}
+			<a href="#" id="addSearchControl_bill_no" class="addSearchControl" {$addSearchControl_bill_no_attrs}>Invoice No</a><br>
+		{END addSearch_bill_no}
+		{BEGIN addSearch_date}
+			<a href="#" id="addSearchControl_date" class="addSearchControl" {$addSearchControl_date_attrs}>Invoice Date</a><br>
+		{END addSearch_date}
+		{BEGIN addSearch_paid_amount}
+			<a href="#" id="addSearchControl_paid_amount" class="addSearchControl" {$addSearchControl_paid_amount_attrs}>Paid (RM)</a><br>
+		{END addSearch_paid_amount}
+		{BEGIN addSearch_amount_balance}
+			<a href="#" id="addSearchControl_amount_balance" class="addSearchControl" {$addSearchControl_amount_balance_attrs}>Outstanding(RM)</a><br>
+		{END addSearch_amount_balance}
+		{BEGIN addSearch_status}
+			<a href="#" id="addSearchControl_status" class="addSearchControl" {$addSearchControl_status_attrs}>Status</a><br>
+		{END addSearch_status}
+	</div>
+	
+	<div class="controlsBlock">
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow" {$filterRow_attrs}>
+			<div class="srchPanelCell">{$delCtrlButt}&nbsp;{$fLabel}:&nbsp;</div>
+			<div class="srchPanelCell srchPanelCell2">{$searchtype} {$searchcontrol} {$searchcontrol1}</div>
+		</div>
+		{END searchCtrlBlock}
+	</div>
+		
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>

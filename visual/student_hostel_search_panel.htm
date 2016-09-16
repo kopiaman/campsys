@@ -1,0 +1,70 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_ID}
+			<a href="#" id="addSearchControl_ID" class="addSearchControl" {$addSearchControl_ID_attrs}>ID</a><br>
+		{END addSearch_ID}
+		{BEGIN addSearch_HostelID}
+			<a href="#" id="addSearchControl_HostelID" class="addSearchControl" {$addSearchControl_HostelID_attrs}>Location</a><br>
+		{END addSearch_HostelID}
+		{BEGIN addSearch_StudentID}
+			<a href="#" id="addSearchControl_StudentID" class="addSearchControl" {$addSearchControl_StudentID_attrs}>Student</a><br>
+		{END addSearch_StudentID}
+		{BEGIN addSearch_Room_No}
+			<a href="#" id="addSearchControl_Room_No" class="addSearchControl" {$addSearchControl_Room_No_attrs}>No</a><br>
+		{END addSearch_Room_No}
+		{BEGIN addSearch_CheckInDate}
+			<a href="#" id="addSearchControl_CheckInDate" class="addSearchControl" {$addSearchControl_CheckInDate_attrs}>Check In Date</a><br>
+		{END addSearch_CheckInDate}
+		{BEGIN addSearch_CheckOutDate}
+			<a href="#" id="addSearchControl_CheckOutDate" class="addSearchControl" {$addSearchControl_CheckOutDate_attrs}>Check Out Date</a><br>
+		{END addSearch_CheckOutDate}
+		{BEGIN addSearch_Items}
+			<a href="#" id="addSearchControl_Items" class="addSearchControl" {$addSearchControl_Items_attrs}>Items</a><br>
+		{END addSearch_Items}
+	</div>
+	
+	<table class="controlsBlock">
+	{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="runner-searchtype">{$searchtype}</div>
+				<div class="runner-searchcontrol">{$searchcontrol}</div>
+				<div class="runner-searchcontrol">{$searchcontrol1}</div>
+		</tr>
+	{END searchCtrlBlock}
+	</table>
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>

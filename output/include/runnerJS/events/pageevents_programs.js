@@ -1,0 +1,4 @@
+
+var pType=Runner.pages.constants.PAGE_LIST;Runner.pages.PageSettings.addPageEvent("programs",pType,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='MODULE_LIST';if(!pageObj.buttonEventBefore['MODULE_LIST']){pageObj.buttonEventBefore['MODULE_LIST']=function(params,ctrl,pageObj,proxy,pageid,rowData){}}
+if(!pageObj.buttonEventAfter['MODULE_LIST']){pageObj.buttonEventAfter['MODULE_LIST']=function(result,ctrl,pageObj,proxy,pageid,rowData){window.open("course_list.php","_blank")}}
+$('a[id=MODULE_LIST]').each(function(){if(!$(this).closest('tr.gridRowAdd').length){var newId="MODULE_LIST"+"_"+Runner.genId();this.id=newId;var button_MODULE_LIST=new Runner.form.Button({id:newId,btnName:"MODULE_LIST"});button_MODULE_LIST.init({args:[pageObj,proxy,pageid]});}});});

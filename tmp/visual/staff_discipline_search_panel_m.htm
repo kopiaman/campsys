@@ -1,0 +1,65 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_ID1}
+			<a href="#" id="addSearchControl_ID1" class="addSearchControl" {$addSearchControl_ID1_attrs}>ID1</a><br>
+		{END addSearch_ID1}
+		{BEGIN addSearch_StaffID}
+			<a href="#" id="addSearchControl_StaffID" class="addSearchControl" {$addSearchControl_StaffID_attrs}>Staff ID</a><br>
+		{END addSearch_StaffID}
+		{BEGIN addSearch_Activity}
+			<a href="#" id="addSearchControl_Activity" class="addSearchControl" {$addSearchControl_Activity_attrs}>Activity (Description)</a><br>
+		{END addSearch_Activity}
+		{BEGIN addSearch_Level}
+			<a href="#" id="addSearchControl_Level" class="addSearchControl" {$addSearchControl_Level_attrs}>Misconduct Level</a><br>
+		{END addSearch_Level}
+		{BEGIN addSearch_Date_Commited}
+			<a href="#" id="addSearchControl_Date_Commited" class="addSearchControl" {$addSearchControl_Date_Commited_attrs}>Date Commited</a><br>
+		{END addSearch_Date_Commited}
+		{BEGIN addSearch_Action_Taken}
+			<a href="#" id="addSearchControl_Action_Taken" class="addSearchControl" {$addSearchControl_Action_Taken_attrs}>Action Taken</a><br>
+		{END addSearch_Action_Taken}
+		{BEGIN addSearch_Comment}
+			<a href="#" id="addSearchControl_Comment" class="addSearchControl" {$addSearchControl_Comment_attrs}>Comment</a><br>
+		{END addSearch_Comment}
+	</div>
+	
+	<div class="controlsBlock">
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow" {$filterRow_attrs}>
+			<div class="srchPanelCell">{$delCtrlButt}&nbsp;{$fLabel}:&nbsp;</div>
+			<div class="srchPanelCell srchPanelCell2">{$searchtype} {$searchcontrol} {$searchcontrol1}</div>
+		</div>
+		{END searchCtrlBlock}
+	</div>
+		
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>

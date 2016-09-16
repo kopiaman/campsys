@@ -1,0 +1,4 @@
+
+var pType=Runner.pages.constants.PAGE_LIST;Runner.pages.PageSettings.addPageEvent("course_moe2",pType,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Import_MOE_Students';if(!pageObj.buttonEventBefore['Import_MOE_Students']){pageObj.buttonEventBefore['Import_MOE_Students']=function(params,ctrl,pageObj,proxy,pageid,rowData){params["txt"]="";ctrl.setMessage("Loading...");}}
+if(!pageObj.buttonEventAfter['Import_MOE_Students']){pageObj.buttonEventAfter['Import_MOE_Students']=function(result,ctrl,pageObj,proxy,pageid,rowData){var message="Syncronize Succesfull!!!";ctrl.setMessage(message);}}
+$('a[id=Import_MOE_Students]').each(function(){if(!$(this).closest('tr.gridRowAdd').length){var newId="Import_MOE_Students"+"_"+Runner.genId();this.id=newId;var button_Import_MOE_Students=new Runner.form.Button({id:newId,btnName:"Import_MOE_Students"});button_Import_MOE_Students.init({args:[pageObj,proxy,pageid]});}});});

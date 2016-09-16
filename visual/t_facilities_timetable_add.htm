@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=7 http-equiv=X-UA-Compatible>
+<META content="text/html; charset=Windows-1252" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}<!--[if IE]><LINK rel=stylesheet type=text/css href="styles/defaultIE.css">{BEGIN IEcssFiles}<LINK rel=stylesheet type=text/css href="{$stylepathIE}">{END IEcssFiles}<![endif]-->
+<META name=GENERATOR content="MSHTML 10.00.9200.16525"></HEAD>
+<BODY class="{$stylename}" {$bodyattrs}>{BEGIN body}{$header} 
+<TABLE class=runner-toptable cellPadding=0><TR class=runner-header><TD class=runner-top colSpan=3>{BEGIN container_add}<TABLE class="runner-c runner-c-add" cellPadding=0 align=center><TR class="runner-toprow style2 header"><TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+          <TD class=runner-cc><DIV class="runner-b-addheader {$brickclass_addheader}">T Facilities 
+            Timetable, Add new record</DIV></TD>
+          <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR>
+        {BEGIN message_block}<TR class="runner-row style1 runner-b-message {$brickclass_message}"><TD class=runner-cl></TD>
+          <TD class="runner-cc runner-brickcontents"><DIV class=runner-message>{$message}</DIV></TD>
+          <TD class=runner-cr></TD></TR>
+        {END message_block}<TR class="runner-row style1 runner-b-wrapper {$wrapperclass_fields}"><TD class=runner-cl></TD>
+          <TD class="runner-cc runner-brickcontents runner-wrapper">{BEGIN container_fields}<TABLE class="runner-c runner-c-fields" style="WIDTH: 475px" 
+            cellPadding=0><TR class="{$cheaderclass_fields}"><TD class=runner-cl style="WIDTH: 4px"><IMG src="images/spacer.gif"></TD>
+                <TD class=runner-cc style="WIDTH: 85px"></TD>
+                <TD class="runner-cc alt" style="WIDTH: 382px"></TD>
+                <TD class="runner-cr alt" style="WIDTH: 4px"><IMG src="images/spacer.gif"></TD></TR>
+              {BEGIN legend_fieldblock}<tr class="runner-row style1 runner-b-addfields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1"><div class="fieldlabel_legend {$fielddispclass_legend}">{BEGIN legend_label}Legend{END legend_label}
+		</div>
+	</td>
+	<td class="runner-cc alt runner-fixedcell"><div class="fieldcontrol_legend {$fielddispclass_legend}">{$legend_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END legend_fieldblock}
+	{BEGIN program_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl style="WIDTH: 4px"></TD>
+                <TD class="runner-cc runner-cc1" style="WIDTH: 73px"><DIV class="fieldlabel_program {$fielddispclass_program}">{BEGIN program_label}Program {END program_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell" 
+                  style="WIDTH: 374px"><DIV 
+                  class="fieldcontrol_program {$fielddispclass_program}">{$program_editcontrol}&nbsp; 
+                </DIV></TD>
+                <TD class="runner-cr alt" style="WIDTH: 4px"></TD></TR>
+              {END program_fieldblock}{BEGIN batch_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl style="WIDTH: 4px"></TD>
+                <TD class="runner-cc runner-cc1" style="WIDTH: 73px"><DIV class="fieldlabel_batch {$fielddispclass_batch}">{BEGIN batch_label}Batch 
+                {END batch_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell" 
+                  style="WIDTH: 374px"><DIV class="fieldcontrol_batch {$fielddispclass_batch}">{$batch_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt" style="WIDTH: 4px"></TD></TR>
+              {END batch_fieldblock}{BEGIN class_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl style="WIDTH: 4px"></TD>
+                <TD class="runner-cc runner-cc1" style="WIDTH: 73px"><DIV class="fieldlabel_class {$fielddispclass_class}">{BEGIN class_label}Class {END class_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell" 
+                  style="WIDTH: 374px"><DIV class="fieldcontrol_class {$fielddispclass_class}">{$class_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt" style="WIDTH: 4px"></TD></TR>
+              {END class_fieldblock}{BEGIN facility_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl style="WIDTH: 4px"></TD>
+                <TD class="runner-cc runner-cc1" style="WIDTH: 73px"><DIV class="fieldlabel_facility {$fielddispclass_facility}">{BEGIN facility_label}Facility {END facility_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell" 
+                  style="WIDTH: 374px"><DIV 
+                  class="fieldcontrol_facility {$fielddispclass_facility}">{$facility_editcontrol}&nbsp; 
+                </DIV></TD>
+                <TD class="runner-cr alt" style="WIDTH: 4px"></TD></TR>
+              {END facility_fieldblock}
+	{BEGIN room_fieldblock}<tr class="runner-row style1 runner-b-addfields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1"><div class="fieldlabel_room {$fielddispclass_room}">{BEGIN room_label}Room{END room_label}
+		</div>
+	</td>
+	<td class="runner-cc alt runner-fixedcell"><div class="fieldcontrol_room {$fielddispclass_room}">{$room_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END room_fieldblock}{BEGIN courseID_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl style="WIDTH: 4px"></TD>
+                <TD class="runner-cc runner-cc1" style="WIDTH: 73px"><DIV class="fieldlabel_courseID {$fielddispclass_courseID}">{BEGIN courseID_label}Module{END courseID_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell" 
+                  style="WIDTH: 374px"><DIV 
+                  class="fieldcontrol_courseID {$fielddispclass_courseID}">{$courseID_editcontrol}&nbsp; 
+                </DIV></TD>
+                <TD class="runner-cr alt" style="WIDTH: 4px"></TD></TR>
+              {END courseID_fieldblock}{BEGIN staffID_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl style="WIDTH: 4px"></TD>
+                <TD class="runner-cc runner-cc1" style="WIDTH: 73px"><DIV class="fieldlabel_staffID {$fielddispclass_staffID}">{BEGIN staffID_label}Instuctor {END staffID_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell" 
+                  style="WIDTH: 374px"><DIV 
+                  class="fieldcontrol_staffID {$fielddispclass_staffID}">{$staffID_editcontrol}&nbsp; 
+                </DIV></TD>
+                <TD class="runner-cr alt" style="WIDTH: 4px"></TD></TR>
+              {END staffID_fieldblock}<TR class="runner-row style1"><TD class=runner-cl style="WIDTH: 4px"></TD>
+                <TD class=runner-cc style="WIDTH: 455px" colSpan=2>{$Section Datetime1}&nbsp; 
+</TD>
+                <TD class=runner-cr style="WIDTH: 4px"></TD></TR>
+              {BEGIN legend}<TR class="runner-row style3 runner-b-legend {$brickclass_legend}"><TD class=runner-cl style="WIDTH: 4px"></TD>
+                <TD class="runner-cc runner-brickcontents" style="WIDTH: 459px" 
+                colSpan=2><SPAN id=required_block{$id}><IMG alt=bullet src="images/icon_required.gif"> - Required field </SPAN></TD>
+                <TD class=runner-cr style="WIDTH: 4px"></TD></TR>
+              {END legend}<TR 
+              class="runner-row style2 runner-b-addbuttons {$brickclass_addbuttons}"><TD class=runner-cl style="WIDTH: 4px"></TD>
+                <TD class="runner-cc runner-brickcontents" style="WIDTH: 459px" 
+                colSpan=2>{BEGIN save_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$savebutton_attrs}>Save</A> 
+                  </SPAN>{END save_button}{BEGIN cancel_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$cancelbutton_attrs}>Cancel</A> 
+                  </SPAN>{END cancel_button}{BEGIN back_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$backbutton_attrs}>Back to 
+                  list</A> </SPAN>{END back_button}{BEGIN backToMenu_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$backToMenubutton_attrs}>Back to menu</A> </SPAN>{END backToMenu_button}</TD>
+                <TD class=runner-cr style="WIDTH: 4px"></TD></TR>
+              <TR class="{$cfooterclass_fields}"><TD class=runner-cl style="WIDTH: 4px"><IMG src="images/spacer.gif"></TD>
+                <TD class=runner-cc style="WIDTH: 85px"></TD>
+                <TD class=runner-cc style="WIDTH: 382px"></TD>
+                <TD class=runner-cr style="WIDTH: 4px"><IMG src="images/spacer.gif"></TD></TR></TABLE>{END container_fields}</TD>
+          <TD class=runner-cr></TD></TR>
+        <TR class="{$cfooterclass_add}"><TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+          <TD class=runner-cc></TD>
+          <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR></TABLE>{END container_add}</TD></TR>
+  <TR class=runner-body><TD class="runner-left {$blockclass_left}"></TD>
+    <TD class="runner-center {$blockclass_center}"></TD>
+    <TD class="runner-right {$blockclass_right}"></TD></TR>
+  <TR class=runner-footer><TD class=runner-bottom 
+colSpan=3><!--%%bottom%%--></TD></TR></TABLE>{$footer}{END body} </BODY></HTML>

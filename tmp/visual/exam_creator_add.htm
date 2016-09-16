@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=7 http-equiv=X-UA-Compatible>
+<META content="text/html; charset=Windows-1252" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}<!--[if IE]><LINK rel=stylesheet type=text/css href="styles/defaultIE.css">{BEGIN IEcssFiles}<LINK rel=stylesheet type=text/css href="{$stylepathIE}">{END IEcssFiles}<![endif]-->
+<META name=GENERATOR content="MSHTML 10.00.9200.16525"></HEAD>
+<BODY class="{$stylename}" {$bodyattrs}>{BEGIN body}{$header} 
+<TABLE class=runner-toptable cellPadding=0><TR class=runner-header><TD class=runner-top colSpan=3>{BEGIN container_add}<TABLE class="runner-c runner-c-add" cellPadding=0 align=center><TR class="runner-toprow style2 header"><TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+          <TD class=runner-cc><DIV class="runner-b-addheader {$brickclass_addheader}">Exam 
+            Creator, Add new record</DIV></TD>
+          <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR>
+        {BEGIN message_block}<TR class="runner-row style1 runner-b-message {$brickclass_message}"><TD class=runner-cl></TD>
+          <TD class="runner-cc runner-brickcontents"><DIV class=runner-message>{$message}</DIV></TD>
+          <TD class=runner-cr></TD></TR>
+        {END message_block}<TR class="runner-row style1 runner-b-wrapper {$wrapperclass_fields}"><TD class=runner-cl></TD>
+          <TD class="runner-cc runner-brickcontents runner-wrapper">{BEGIN container_fields}<TABLE class="runner-c runner-c-fields" cellPadding=0><TR class="{$cheaderclass_fields}"><TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+                <TD class=runner-cc></TD>
+                <TD class="runner-cc alt"></TD>
+                <TD class="runner-cr alt"><IMG src="images/spacer.gif"></TD></TR>
+              {BEGIN types_fieldblock}<tr class="runner-row style1 runner-b-addfields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1"><div class="fieldlabel_types {$fielddispclass_types}">{BEGIN types_label}Types{END types_label}
+		</div>
+	</td>
+	<td class="runner-cc alt runner-fixedcell"><div class="fieldcontrol_types {$fielddispclass_types}">{$types_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END types_fieldblock}
+	{BEGIN date_memo_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1"><DIV class="fieldlabel_date_memo {$fielddispclass_date_memo}">{BEGIN date_memo_label}Date Memo {END date_memo_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell"><DIV 
+                  class="fieldcontrol_date_memo {$fielddispclass_date_memo}">{$date_memo_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END date_memo_fieldblock}{BEGIN ref_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1"><DIV class="fieldlabel_ref {$fielddispclass_ref}">{BEGIN ref_label}Ref No {END ref_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell"><DIV class="fieldcontrol_ref {$fielddispclass_ref}">{$ref_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END ref_fieldblock}{BEGIN exam_date_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1"><DIV class="fieldlabel_exam_date {$fielddispclass_exam_date}">{BEGIN exam_date_label}Exam Date {END exam_date_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell"><DIV 
+                  class="fieldcontrol_exam_date {$fielddispclass_exam_date}">{$exam_date_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END exam_date_fieldblock}{BEGIN exam_venue_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1"><DIV class="fieldlabel_exam_venue {$fielddispclass_exam_venue}">{BEGIN exam_venue_label}Exam Venue {END exam_venue_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell"><DIV 
+                  class="fieldcontrol_exam_venue {$fielddispclass_exam_venue}">{$exam_venue_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END exam_venue_fieldblock}{BEGIN stime_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1"><DIV class="fieldlabel_stime {$fielddispclass_stime}">{BEGIN stime_label}Start Time {END stime_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell"><DIV class="fieldcontrol_stime {$fielddispclass_stime}">{$stime_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END stime_fieldblock}{BEGIN etime_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1"><DIV class="fieldlabel_etime {$fielddispclass_etime}">{BEGIN etime_label}End Time {END etime_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell"><DIV class="fieldcontrol_etime {$fielddispclass_etime}">{$etime_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END etime_fieldblock}{BEGIN program_fieldblock}<TR class="runner-row style1 runner-b-addfields" style="HEIGHT: 20px"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1"><DIV class="fieldlabel_program {$fielddispclass_program}">{BEGIN program_label}Program {END program_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell"><DIV 
+                  class="fieldcontrol_program {$fielddispclass_program}">{$program_editcontrol}&nbsp; 
+                </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END program_fieldblock}{BEGIN batch_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1"><DIV class="fieldlabel_batch {$fielddispclass_batch}">{BEGIN batch_label}Batch {END batch_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell"><DIV class="fieldcontrol_batch {$fielddispclass_batch}">{$batch_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END batch_fieldblock}{BEGIN class_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1"><DIV class="fieldlabel_class {$fielddispclass_class}">{BEGIN class_label}Class {END class_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell"><DIV class="fieldcontrol_class {$fielddispclass_class}">{$class_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END class_fieldblock}{BEGIN course_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1"><DIV class="fieldlabel_course {$fielddispclass_course}">{BEGIN course_label}Module {END course_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell"><DIV 
+                  class="fieldcontrol_course {$fielddispclass_course}">{$course_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END course_fieldblock}{BEGIN legend}<TR class="runner-row style3 runner-b-legend {$brickclass_legend}"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-brickcontents" colSpan=2><SPAN id=required_block{$id}><IMG alt=bullet src="images/icon_required.gif"> - Required field </SPAN></TD>
+                <TD class=runner-cr></TD></TR>
+              {END legend}<TR 
+              class="runner-row style2 runner-b-addbuttons {$brickclass_addbuttons}"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-brickcontents" colSpan=2>{BEGIN save_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$savebutton_attrs}>Save</A> 
+                  </SPAN>{END save_button}{BEGIN cancel_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$cancelbutton_attrs}>Cancel</A> 
+                  </SPAN>{END cancel_button}{BEGIN back_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$backbutton_attrs}>Back to 
+                  list</A> </SPAN>{END back_button}{BEGIN backToMenu_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$backToMenubutton_attrs}>Back to menu</A> </SPAN>{END backToMenu_button}</TD>
+                <TD class=runner-cr></TD></TR>
+              <TR class="{$cfooterclass_fields}"><TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+                <TD class=runner-cc></TD>
+                <TD class=runner-cc></TD>
+                <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR></TABLE>{END container_fields}</TD>
+          <TD class=runner-cr></TD></TR>
+        <TR class="{$cfooterclass_add}"><TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+          <TD class=runner-cc></TD>
+          <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR></TABLE>{END container_add}</TD></TR>
+  <TR class=runner-body><TD class="runner-left {$blockclass_left}"></TD>
+    <TD class="runner-center {$blockclass_center}"></TD>
+    <TD class="runner-right {$blockclass_right}"></TD></TR>
+  <TR class=runner-footer><TD class=runner-bottom 
+colSpan=3><!--%%bottom%%--></TD></TR></TABLE>{$footer}{END body} </BODY></HTML>

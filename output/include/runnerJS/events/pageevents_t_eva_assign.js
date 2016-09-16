@@ -1,0 +1,4 @@
+
+var pType=Runner.pages.constants.PAGE_LIST;Runner.pages.PageSettings.addPageEvent("t_eva_assign",pType,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='New_Button2';if(!pageObj.buttonEventBefore['New_Button2']){pageObj.buttonEventBefore['New_Button2']=function(params,ctrl,pageObj,proxy,pageid,rowData){params["txt"]="Hello";ctrl.setMessage("Sending request to server...");}}
+if(!pageObj.buttonEventAfter['New_Button2']){pageObj.buttonEventAfter['New_Button2']=function(result,ctrl,pageObj,proxy,pageid,rowData){window.open("x_timetable_cal.php","_blank")}}
+$('a[id=New_Button2]').each(function(){if(!$(this).closest('tr.gridRowAdd').length){var newId="New_Button2"+"_"+Runner.genId();this.id=newId;var button_New_Button2=new Runner.form.Button({id:newId,btnName:"New_Button2"});button_New_Button2.init({args:[pageObj,proxy,pageid]});}});});

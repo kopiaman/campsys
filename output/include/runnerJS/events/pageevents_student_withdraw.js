@@ -1,0 +1,4 @@
+
+var pType=Runner.pages.constants.PAGE_LIST;Runner.pages.PageSettings.addPageEvent("student_withdraw",pType,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='ASSIGN_AS_ALUMNI11';if(!pageObj.buttonEventBefore['ASSIGN_AS_ALUMNI11']){pageObj.buttonEventBefore['ASSIGN_AS_ALUMNI11']=function(params,ctrl,pageObj,proxy,pageid,rowData){params["txt"]="Hello";ctrl.setMessage("Sending request to server...");}}
+if(!pageObj.buttonEventAfter['ASSIGN_AS_ALUMNI11']){pageObj.buttonEventAfter['ASSIGN_AS_ALUMNI11']=function(result,ctrl,pageObj,proxy,pageid,rowData){var message=" Success !!!";ctrl.setMessage(message);}}
+$('a[id=ASSIGN_AS_ALUMNI11]').each(function(){if(!$(this).closest('tr.gridRowAdd').length){var newId="ASSIGN_AS_ALUMNI11"+"_"+Runner.genId();this.id=newId;var button_ASSIGN_AS_ALUMNI11=new Runner.form.Button({id:newId,btnName:"ASSIGN_AS_ALUMNI11"});button_ASSIGN_AS_ALUMNI11.init({args:[pageObj,proxy,pageid]});}});});

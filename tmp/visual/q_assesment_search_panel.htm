@@ -1,0 +1,67 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_task_no}
+			<a href="#" id="addSearchControl_task_no" class="addSearchControl" {$addSearchControl_task_no_attrs}>Task No</a><br>
+		{END addSearch_task_no}
+		{BEGIN addSearch_project}
+			<a href="#" id="addSearchControl_project" class="addSearchControl" {$addSearchControl_project_attrs}>Project</a><br>
+		{END addSearch_project}
+		{BEGIN addSearch_as_name}
+			<a href="#" id="addSearchControl_as_name" class="addSearchControl" {$addSearchControl_as_name_attrs}>Assessor</a><br>
+		{END addSearch_as_name}
+		{BEGIN addSearch_result}
+			<a href="#" id="addSearchControl_result" class="addSearchControl" {$addSearchControl_result_attrs}>Result</a><br>
+		{END addSearch_result}
+		{BEGIN addSearch_as_date}
+			<a href="#" id="addSearchControl_as_date" class="addSearchControl" {$addSearchControl_as_date_attrs}>Date</a><br>
+		{END addSearch_as_date}
+		{BEGIN addSearch_as_comment}
+			<a href="#" id="addSearchControl_as_comment" class="addSearchControl" {$addSearchControl_as_comment_attrs}>Comment</a><br>
+		{END addSearch_as_comment}
+	</div>
+	
+	<table class="controlsBlock">
+	{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="runner-searchtype">{$searchtype}</div>
+				<div class="runner-searchcontrol">{$searchcontrol}</div>
+				<div class="runner-searchcontrol">{$searchcontrol1}</div>
+		</tr>
+	{END searchCtrlBlock}
+	</table>
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>

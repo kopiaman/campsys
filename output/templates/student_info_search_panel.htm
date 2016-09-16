@@ -1,0 +1,193 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_hostel_in}
+			<a href="#" id="addSearchControl_hostel_in" class="addSearchControl" {$addSearchControl_hostel_in_attrs}>Hostel In</a><br>
+		{END addSearch_hostel_in}
+		{BEGIN addSearch_Option}
+			<a href="#" id="addSearchControl_Option" class="addSearchControl" {$addSearchControl_Option_attrs}>Option</a><br>
+		{END addSearch_Option}
+		{BEGIN addSearch_Name}
+			<a href="#" id="addSearchControl_Name" class="addSearchControl" {$addSearchControl_Name_attrs}>Name</a><br>
+		{END addSearch_Name}
+		{BEGIN addSearch_City}
+			<a href="#" id="addSearchControl_City" class="addSearchControl" {$addSearchControl_City_attrs}>City</a><br>
+		{END addSearch_City}
+		{BEGIN addSearch_photo}
+			<a href="#" id="addSearchControl_photo" class="addSearchControl" {$addSearchControl_photo_attrs}>Photo</a><br>
+		{END addSearch_photo}
+		{BEGIN addSearch_StateID}
+			<a href="#" id="addSearchControl_StateID" class="addSearchControl" {$addSearchControl_StateID_attrs}>States</a><br>
+		{END addSearch_StateID}
+		{BEGIN addSearch_DOB}
+			<a href="#" id="addSearchControl_DOB" class="addSearchControl" {$addSearchControl_DOB_attrs}>Birthday</a><br>
+		{END addSearch_DOB}
+		{BEGIN addSearch_m_job}
+			<a href="#" id="addSearchControl_m_job" class="addSearchControl" {$addSearchControl_m_job_attrs}>Occupation</a><br>
+		{END addSearch_m_job}
+		{BEGIN addSearch_ICNO}
+			<a href="#" id="addSearchControl_ICNO" class="addSearchControl" {$addSearchControl_ICNO_attrs}>IC</a><br>
+		{END addSearch_ICNO}
+		{BEGIN addSearch_married}
+			<a href="#" id="addSearchControl_married" class="addSearchControl" {$addSearchControl_married_attrs}>Marital Status</a><br>
+		{END addSearch_married}
+		{BEGIN addSearch_Status}
+			<a href="#" id="addSearchControl_Status" class="addSearchControl" {$addSearchControl_Status_attrs}>Status</a><br>
+		{END addSearch_Status}
+		{BEGIN addSearch_MatricNo}
+			<a href="#" id="addSearchControl_MatricNo" class="addSearchControl" {$addSearchControl_MatricNo_attrs}>Matric No</a><br>
+		{END addSearch_MatricNo}
+		{BEGIN addSearch_Gender}
+			<a href="#" id="addSearchControl_Gender" class="addSearchControl" {$addSearchControl_Gender_attrs}>Gender</a><br>
+		{END addSearch_Gender}
+		{BEGIN addSearch_Intake_Category}
+			<a href="#" id="addSearchControl_Intake_Category" class="addSearchControl" {$addSearchControl_Intake_Category_attrs}>Program</a><br>
+		{END addSearch_Intake_Category}
+		{BEGIN addSearch_Religion}
+			<a href="#" id="addSearchControl_Religion" class="addSearchControl" {$addSearchControl_Religion_attrs}>Religion</a><br>
+		{END addSearch_Religion}
+		{BEGIN addSearch_Nationality}
+			<a href="#" id="addSearchControl_Nationality" class="addSearchControl" {$addSearchControl_Nationality_attrs}>Nationality</a><br>
+		{END addSearch_Nationality}
+		{BEGIN addSearch_DipID}
+			<a href="#" id="addSearchControl_DipID" class="addSearchControl" {$addSearchControl_DipID_attrs}>Course</a><br>
+		{END addSearch_DipID}
+		{BEGIN addSearch_BatchID}
+			<a href="#" id="addSearchControl_BatchID" class="addSearchControl" {$addSearchControl_BatchID_attrs}>Batch</a><br>
+		{END addSearch_BatchID}
+		{BEGIN addSearch_race}
+			<a href="#" id="addSearchControl_race" class="addSearchControl" {$addSearchControl_race_attrs}>Race</a><br>
+		{END addSearch_race}
+		{BEGIN addSearch_StudentID}
+			<a href="#" id="addSearchControl_StudentID" class="addSearchControl" {$addSearchControl_StudentID_attrs}>Student</a><br>
+		{END addSearch_StudentID}
+		{BEGIN addSearch_Class}
+			<a href="#" id="addSearchControl_Class" class="addSearchControl" {$addSearchControl_Class_attrs}>Class</a><br>
+		{END addSearch_Class}
+		{BEGIN addSearch_Sponsor}
+			<a href="#" id="addSearchControl_Sponsor" class="addSearchControl" {$addSearchControl_Sponsor_attrs}>Financial Aid</a><br>
+		{END addSearch_Sponsor}
+		{BEGIN addSearch_Email}
+			<a href="#" id="addSearchControl_Email" class="addSearchControl" {$addSearchControl_Email_attrs}>Email</a><br>
+		{END addSearch_Email}
+		{BEGIN addSearch_HomeTelephone}
+			<a href="#" id="addSearchControl_HomeTelephone" class="addSearchControl" {$addSearchControl_HomeTelephone_attrs}>Home Tel</a><br>
+		{END addSearch_HomeTelephone}
+		{BEGIN addSearch_Address1}
+			<a href="#" id="addSearchControl_Address1" class="addSearchControl" {$addSearchControl_Address1_attrs}>Address</a><br>
+		{END addSearch_Address1}
+		{BEGIN addSearch_qua_level}
+			<a href="#" id="addSearchControl_qua_level" class="addSearchControl" {$addSearchControl_qua_level_attrs}>Level</a><br>
+		{END addSearch_qua_level}
+		{BEGIN addSearch_MobileTelephone}
+			<a href="#" id="addSearchControl_MobileTelephone" class="addSearchControl" {$addSearchControl_MobileTelephone_attrs}>Mobile No</a><br>
+		{END addSearch_MobileTelephone}
+		{BEGIN addSearch_f_name}
+			<a href="#" id="addSearchControl_f_name" class="addSearchControl" {$addSearchControl_f_name_attrs}>Father&#39;s Name</a><br>
+		{END addSearch_f_name}
+		{BEGIN addSearch_m_name}
+			<a href="#" id="addSearchControl_m_name" class="addSearchControl" {$addSearchControl_m_name_attrs}>Mother&#39;s Name</a><br>
+		{END addSearch_m_name}
+		{BEGIN addSearch_f_tel}
+			<a href="#" id="addSearchControl_f_tel" class="addSearchControl" {$addSearchControl_f_tel_attrs}>Tel</a><br>
+		{END addSearch_f_tel}
+		{BEGIN addSearch_Nogilir}
+			<a href="#" id="addSearchControl_Nogilir" class="addSearchControl" {$addSearchControl_Nogilir_attrs}>No Giliran (MOE)</a><br>
+		{END addSearch_Nogilir}
+		{BEGIN addSearch_Disability}
+			<a href="#" id="addSearchControl_Disability" class="addSearchControl" {$addSearchControl_Disability_attrs}>Disability</a><br>
+		{END addSearch_Disability}
+		{BEGIN addSearch_f_ic}
+			<a href="#" id="addSearchControl_f_ic" class="addSearchControl" {$addSearchControl_f_ic_attrs}>IC</a><br>
+		{END addSearch_f_ic}
+		{BEGIN addSearch_f_job}
+			<a href="#" id="addSearchControl_f_job" class="addSearchControl" {$addSearchControl_f_job_attrs}>Occupation</a><br>
+		{END addSearch_f_job}
+		{BEGIN addSearch_m_tel}
+			<a href="#" id="addSearchControl_m_tel" class="addSearchControl" {$addSearchControl_m_tel_attrs}>Tel</a><br>
+		{END addSearch_m_tel}
+		{BEGIN addSearch_m_ic}
+			<a href="#" id="addSearchControl_m_ic" class="addSearchControl" {$addSearchControl_m_ic_attrs}>IC</a><br>
+		{END addSearch_m_ic}
+		{BEGIN addSearch_f1_name}
+			<a href="#" id="addSearchControl_f1_name" class="addSearchControl" {$addSearchControl_f1_name_attrs}>#1 Name</a><br>
+		{END addSearch_f1_name}
+		{BEGIN addSearch_f1_relation}
+			<a href="#" id="addSearchControl_f1_relation" class="addSearchControl" {$addSearchControl_f1_relation_attrs}>Relationship</a><br>
+		{END addSearch_f1_relation}
+		{BEGIN addSearch_f1_tel}
+			<a href="#" id="addSearchControl_f1_tel" class="addSearchControl" {$addSearchControl_f1_tel_attrs}>Tel</a><br>
+		{END addSearch_f1_tel}
+		{BEGIN addSearch_f2_name}
+			<a href="#" id="addSearchControl_f2_name" class="addSearchControl" {$addSearchControl_f2_name_attrs}>#2 Name</a><br>
+		{END addSearch_f2_name}
+		{BEGIN addSearch_f2_relation}
+			<a href="#" id="addSearchControl_f2_relation" class="addSearchControl" {$addSearchControl_f2_relation_attrs}>Relationship</a><br>
+		{END addSearch_f2_relation}
+		{BEGIN addSearch_f2_tel}
+			<a href="#" id="addSearchControl_f2_tel" class="addSearchControl" {$addSearchControl_f2_tel_attrs}>Tel</a><br>
+		{END addSearch_f2_tel}
+		{BEGIN addSearch_DateJoin}
+			<a href="#" id="addSearchControl_DateJoin" class="addSearchControl" {$addSearchControl_DateJoin_attrs}>Date Join</a><br>
+		{END addSearch_DateJoin}
+		{BEGIN addSearch_qua_year}
+			<a href="#" id="addSearchControl_qua_year" class="addSearchControl" {$addSearchControl_qua_year_attrs}>Year</a><br>
+		{END addSearch_qua_year}
+		{BEGIN addSearch_qua_place}
+			<a href="#" id="addSearchControl_qua_place" class="addSearchControl" {$addSearchControl_qua_place_attrs}>School/ Institution</a><br>
+		{END addSearch_qua_place}
+		{BEGIN addSearch_qua_result}
+			<a href="#" id="addSearchControl_qua_result" class="addSearchControl" {$addSearchControl_qua_result_attrs}>Result</a><br>
+		{END addSearch_qua_result}
+		{BEGIN addSearch_MedicalCondition}
+			<a href="#" id="addSearchControl_MedicalCondition" class="addSearchControl" {$addSearchControl_MedicalCondition_attrs}>Serious Medical Condition</a><br>
+		{END addSearch_MedicalCondition}
+		{BEGIN addSearch_blood}
+			<a href="#" id="addSearchControl_blood" class="addSearchControl" {$addSearchControl_blood_attrs}>Blood</a><br>
+		{END addSearch_blood}
+	</div>
+	
+	<table class="controlsBlock">
+	{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="runner-searchtype">{$searchtype}</div>
+				<div class="runner-searchcontrol">{$searchcontrol}</div>
+				<div class="runner-searchcontrol">{$searchcontrol1}</div>
+		</tr>
+	{END searchCtrlBlock}
+	</table>
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>

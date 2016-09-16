@@ -1,0 +1,76 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_Semester}
+			<a href="#" id="addSearchControl_Semester" class="addSearchControl" {$addSearchControl_Semester_attrs}>Semester</a><br>
+		{END addSearch_Semester}
+		{BEGIN addSearch_Final_Exam}
+			<a href="#" id="addSearchControl_Final_Exam" class="addSearchControl" {$addSearchControl_Final_Exam_attrs}>Mark(%)</a><br>
+		{END addSearch_Final_Exam}
+		{BEGIN addSearch_Exam_Status}
+			<a href="#" id="addSearchControl_Exam_Status" class="addSearchControl" {$addSearchControl_Exam_Status_attrs}>Status</a><br>
+		{END addSearch_Exam_Status}
+		{BEGIN addSearch_Exam_Remark}
+			<a href="#" id="addSearchControl_Exam_Remark" class="addSearchControl" {$addSearchControl_Exam_Remark_attrs}>Remark</a><br>
+		{END addSearch_Exam_Remark}
+		{BEGIN addSearch_BatchID}
+			<a href="#" id="addSearchControl_BatchID" class="addSearchControl" {$addSearchControl_BatchID_attrs}>Batch</a><br>
+		{END addSearch_BatchID}
+		{BEGIN addSearch_Class}
+			<a href="#" id="addSearchControl_Class" class="addSearchControl" {$addSearchControl_Class_attrs}>Class</a><br>
+		{END addSearch_Class}
+		{BEGIN addSearch_Shortname}
+			<a href="#" id="addSearchControl_Shortname" class="addSearchControl" {$addSearchControl_Shortname_attrs}>Module</a><br>
+		{END addSearch_Shortname}
+		{BEGIN addSearch_shortcut_name}
+			<a href="#" id="addSearchControl_shortcut_name" class="addSearchControl" {$addSearchControl_shortcut_name_attrs}>Program</a><br>
+		{END addSearch_shortcut_name}
+		{BEGIN addSearch_MatricNo}
+			<a href="#" id="addSearchControl_MatricNo" class="addSearchControl" {$addSearchControl_MatricNo_attrs}>Matric No</a><br>
+		{END addSearch_MatricNo}
+	</div>
+	
+	<table class="controlsBlock">
+	{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="runner-searchtype">{$searchtype}</div>
+				<div class="runner-searchcontrol">{$searchcontrol}</div>
+				<div class="runner-searchcontrol">{$searchcontrol1}</div>
+		</tr>
+	{END searchCtrlBlock}
+	</table>
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>

@@ -1,0 +1,150 @@
+.page-add,
+  .runner-pagewrapper .page-add,
+  .runner-pagewrapper .runner-pagewrapper .page-add
+{
+padding-top:10px; padding-left:10px;
+}
+.page-add .runner-c-fields,
+  .runner-pagewrapper .page-add .runner-c-fields,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-c-fields
+{
+margin-bottom:5px;
+}
+.page-add .runner-c-fields,
+  .runner-pagewrapper .page-add .runner-c-fields,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-c-fields
+{
+width:500px;
+}
+body.page-add .runner-c-fields
+{
+margin-left:auto; margin-right:auto;
+}
+.page-add .runner-b-addheader, .page-add .runner-b-addheader,
+.page-add .runner-b-addheader, .page-add .runner-b-addheader > *,
+  .runner-pagewrapper .page-add .runner-b-addheader, .page-add .runner-b-addheader,
+  .runner-pagewrapper .page-add .runner-b-addheader, .page-add .runner-b-addheader > *,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-addheader, .page-add .runner-b-addheader,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-addheader, .page-add .runner-b-addheader > *
+{
+white-space: nowrap;
+}
+.page-add .runner-b-addheader, .page-add .runner-b-addheader,
+.page-add .runner-b-addheader, .page-add .runner-b-addheader > *,
+  .runner-pagewrapper .page-add .runner-b-addheader, .page-add .runner-b-addheader,
+  .runner-pagewrapper .page-add .runner-b-addheader, .page-add .runner-b-addheader > *,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-addheader, .page-add .runner-b-addheader,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-addheader, .page-add .runner-b-addheader > *
+{
+text-align: center;
+}
+.page-add .runner-b-message, .page-add .runner-b-message,
+.page-add .runner-b-message, .page-add .runner-b-message > *,
+  .runner-pagewrapper .page-add .runner-b-message, .page-add .runner-b-message,
+  .runner-pagewrapper .page-add .runner-b-message, .page-add .runner-b-message > *,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-message, .page-add .runner-b-message,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-message, .page-add .runner-b-message > *
+{
+white-space: nowrap;
+}
+.page-add .runner-b-message, .page-add .runner-b-message,
+.page-add .runner-b-message, .page-add .runner-b-message > *,
+  .runner-pagewrapper .page-add .runner-b-message, .page-add .runner-b-message,
+  .runner-pagewrapper .page-add .runner-b-message, .page-add .runner-b-message > *,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-message, .page-add .runner-b-message,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-message, .page-add .runner-b-message > *
+{
+text-align: left;
+}
+.page-add .runner-b-addfields, .page-add .runner-b-addfields,
+.page-add .runner-b-addfields, .page-add .runner-b-addfields > *,
+  .runner-pagewrapper .page-add .runner-b-addfields, .page-add .runner-b-addfields,
+  .runner-pagewrapper .page-add .runner-b-addfields, .page-add .runner-b-addfields > *,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-addfields, .page-add .runner-b-addfields,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-addfields, .page-add .runner-b-addfields > *
+{
+white-space: nowrap;
+}
+.page-add .runner-b-addfields, .page-add .runner-b-addfields,
+.page-add .runner-b-addfields, .page-add .runner-b-addfields > *,
+  .runner-pagewrapper .page-add .runner-b-addfields, .page-add .runner-b-addfields,
+  .runner-pagewrapper .page-add .runner-b-addfields, .page-add .runner-b-addfields > *,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-addfields, .page-add .runner-b-addfields,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-addfields, .page-add .runner-b-addfields > *
+{
+text-align: left;
+}
+.page-add .runner-b-legend, .page-add .runner-b-legend,
+.page-add .runner-b-legend, .page-add .runner-b-legend > *,
+  .runner-pagewrapper .page-add .runner-b-legend, .page-add .runner-b-legend,
+  .runner-pagewrapper .page-add .runner-b-legend, .page-add .runner-b-legend > *,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-legend, .page-add .runner-b-legend,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-legend, .page-add .runner-b-legend > *
+{
+white-space: nowrap;
+}
+.page-add .runner-b-legend, .page-add .runner-b-legend,
+.page-add .runner-b-legend, .page-add .runner-b-legend > *,
+  .runner-pagewrapper .page-add .runner-b-legend, .page-add .runner-b-legend,
+  .runner-pagewrapper .page-add .runner-b-legend, .page-add .runner-b-legend > *,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-legend, .page-add .runner-b-legend,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-legend, .page-add .runner-b-legend > *
+{
+text-align: left;
+}
+.page-add .runner-b-addbuttons, .page-add .runner-b-addbuttons,
+.page-add .runner-b-addbuttons, .page-add .runner-b-addbuttons > *,
+  .runner-pagewrapper .page-add .runner-b-addbuttons, .page-add .runner-b-addbuttons,
+  .runner-pagewrapper .page-add .runner-b-addbuttons, .page-add .runner-b-addbuttons > *,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-addbuttons, .page-add .runner-b-addbuttons,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-addbuttons, .page-add .runner-b-addbuttons > *
+{
+white-space: nowrap;
+}
+.page-add .runner-b-addbuttons, .page-add .runner-b-addbuttons,
+.page-add .runner-b-addbuttons, .page-add .runner-b-addbuttons > *,
+  .runner-pagewrapper .page-add .runner-b-addbuttons, .page-add .runner-b-addbuttons,
+  .runner-pagewrapper .page-add .runner-b-addbuttons, .page-add .runner-b-addbuttons > *,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-addbuttons, .page-add .runner-b-addbuttons,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-addbuttons, .page-add .runner-b-addbuttons > *
+{
+text-align: left;
+}
+.page-add .runner-c-details,
+  .runner-pagewrapper .page-add .runner-c-details,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-c-details
+{
+margin-bottom:5px;
+}
+.page-add .runner-c-details,
+  .runner-pagewrapper .page-add .runner-c-details,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-c-details
+{
+width:500px;
+}
+.page-add .runner-b-adddetails, .page-add .runner-b-adddetails,
+.page-add .runner-b-adddetails, .page-add .runner-b-adddetails > *,
+  .runner-pagewrapper .page-add .runner-b-adddetails, .page-add .runner-b-adddetails,
+  .runner-pagewrapper .page-add .runner-b-adddetails, .page-add .runner-b-adddetails > *,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-adddetails, .page-add .runner-b-adddetails,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-adddetails, .page-add .runner-b-adddetails > *
+{
+white-space: nowrap;
+}
+.page-add .runner-b-adddetails, .page-add .runner-b-adddetails,
+.page-add .runner-b-adddetails, .page-add .runner-b-adddetails > *,
+  .runner-pagewrapper .page-add .runner-b-adddetails, .page-add .runner-b-adddetails,
+  .runner-pagewrapper .page-add .runner-b-adddetails, .page-add .runner-b-adddetails > *,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-adddetails, .page-add .runner-b-adddetails,
+  .runner-pagewrapper .runner-pagewrapper .page-add .runner-b-adddetails, .page-add .runner-b-adddetails > *
+{
+text-align: left;
+}
+body.page-add .runner-toptable
+{
+width:100%;
+}
+body.page-add .runner-top
+{
+padding-right: 5px;
+}

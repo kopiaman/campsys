@@ -1,0 +1,4 @@
+
+var pType=Runner.pages.constants.PAGE_LIST;Runner.pages.PageSettings.addPageEvent("ojt_company",pType,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Import_MOE_Students1';if(!pageObj.buttonEventBefore['Import_MOE_Students1']){pageObj.buttonEventBefore['Import_MOE_Students1']=function(params,ctrl,pageObj,proxy,pageid,rowData){params["txt"]="Done";ctrl.setMessage("Loading...");}}
+if(!pageObj.buttonEventAfter['Import_MOE_Students1']){pageObj.buttonEventAfter['Import_MOE_Students1']=function(result,ctrl,pageObj,proxy,pageid,rowData){var message=result["txt"]+" !!!";ctrl.setMessage(message);}}
+$('a[id=Import_MOE_Students1]').each(function(){if(!$(this).closest('tr.gridRowAdd').length){var newId="Import_MOE_Students1"+"_"+Runner.genId();this.id=newId;var button_Import_MOE_Students1=new Runner.form.Button({id:newId,btnName:"Import_MOE_Students1"});button_Import_MOE_Students1.init({args:[pageObj,proxy,pageid]});}});});

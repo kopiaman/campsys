@@ -1,0 +1,4 @@
+
+var pType=Runner.pages.constants.PAGE_LIST;Runner.pages.PageSettings.addPageEvent("calendar",pType,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='VIEW_CALENDAR';if(!pageObj.buttonEventBefore['VIEW_CALENDAR']){pageObj.buttonEventBefore['VIEW_CALENDAR']=function(params,ctrl,pageObj,proxy,pageid,rowData){}}
+if(!pageObj.buttonEventAfter['VIEW_CALENDAR']){pageObj.buttonEventAfter['VIEW_CALENDAR']=function(result,ctrl,pageObj,proxy,pageid,rowData){window.open("x_event_calendar.php","_blank");}}
+$('a[id=VIEW_CALENDAR]').each(function(){if(!$(this).closest('tr.gridRowAdd').length){var newId="VIEW_CALENDAR"+"_"+Runner.genId();this.id=newId;var button_VIEW_CALENDAR=new Runner.form.Button({id:newId,btnName:"VIEW_CALENDAR"});button_VIEW_CALENDAR.init({args:[pageObj,proxy,pageid]});}});});

@@ -1,0 +1,59 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_StudentID}
+			<a href="#" id="addSearchControl_StudentID" class="addSearchControl" {$addSearchControl_StudentID_attrs}>Student </a><br>
+		{END addSearch_StudentID}
+		{BEGIN addSearch_CourseID}
+			<a href="#" id="addSearchControl_CourseID" class="addSearchControl" {$addSearchControl_CourseID_attrs}>Subject</a><br>
+		{END addSearch_CourseID}
+		{BEGIN addSearch_sem}
+			<a href="#" id="addSearchControl_sem" class="addSearchControl" {$addSearchControl_sem_attrs}>Sem</a><br>
+		{END addSearch_sem}
+		{BEGIN addSearch_Exam_Status}
+			<a href="#" id="addSearchControl_Exam_Status" class="addSearchControl" {$addSearchControl_Exam_Status_attrs}>Status</a><br>
+		{END addSearch_Exam_Status}
+		{BEGIN addSearch_Final_Exam}
+			<a href="#" id="addSearchControl_Final_Exam" class="addSearchControl" {$addSearchControl_Final_Exam_attrs}>Result</a><br>
+		{END addSearch_Final_Exam}
+	</div>
+	
+	<div class="controlsBlock">
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow" {$filterRow_attrs}>
+			<div class="srchPanelCell">{$delCtrlButt}&nbsp;{$fLabel}:&nbsp;</div>
+			<div class="srchPanelCell srchPanelCell2">{$searchtype} {$searchcontrol} {$searchcontrol1}</div>
+		</div>
+		{END searchCtrlBlock}
+	</div>
+		
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>
